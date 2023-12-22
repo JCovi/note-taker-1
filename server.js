@@ -32,6 +32,9 @@ app.get('/api/notes', (req, res) => {
     }
 })
 });
+// Handle POST request to add a new note: Extract data from the request, create a new note with a unique ID,
+// read existing notes from the database, append the new note, and update the database file. Respond with
+// success or error status accordingly.
 app.post('/api/notes', (req,res) => {
     console.log(`${req.method} request received to add note`);
 
